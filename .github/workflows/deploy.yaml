@@ -10,7 +10,7 @@ jobs:
       - name: setup git auth
         env:
           email: 'stefany.c.r@hotmail.com'
-          username: 'Stefany Repetcki'
+          username: 'StefanyRepetcki'
           access_token: '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'
         run: |
           git config --global credential.helper store
@@ -29,6 +29,5 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.3
         with:
-          github_token: ${{ secrets.CALCULATOR }}
           branch: gh-pages # The branch the action should deploy to.
           folder: './build'
