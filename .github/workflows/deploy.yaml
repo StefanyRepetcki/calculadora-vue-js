@@ -9,13 +9,12 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
-          git config --global 'credential.https://github.com' '!gh auth git-credential'
           npm ci
           npm run build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.CALCULATOR }}
           branch: gh-pages # The branch the action should deploy to.
           folder: './build'
