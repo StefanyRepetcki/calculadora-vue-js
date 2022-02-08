@@ -10,7 +10,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+}
+
+body {
+    background: rgb(49,71,94);
+    background: linear-gradient(90deg, rgba(49,71,94,1) 0%, rgba(49,71,94,1) 35%, rgba(29,196,107,1) 100%);
 }
 
 #nav {
