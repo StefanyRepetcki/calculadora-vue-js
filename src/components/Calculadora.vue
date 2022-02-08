@@ -203,7 +203,7 @@ export default {
         },
         equal() {
             if(this.numbers) {
-                this.result = eval(this.numbers);
+                this.result = eval(this.numbers) ? eval(this.numbers) : "0" ;
                 this.numbers = this.numbers.concat(" =");
             }
         },
