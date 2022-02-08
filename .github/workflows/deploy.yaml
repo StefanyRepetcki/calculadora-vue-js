@@ -9,6 +9,8 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
+          git config --global user.email "stefany.c.r@hotmail.com"
+          git config --global user.name "StefanyRepetcki"
           npm ci
           npm run build
 
