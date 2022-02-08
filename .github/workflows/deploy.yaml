@@ -7,14 +7,24 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v2
 
+      - name: setup git auth
+        env:
+          email: 'stefany.c.r@hotmail.com'
+          username: 'StefanyRepetcki'
+          access_token: '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'
+        run: |
+          git config --global credential.helper store
+          echo "https://${access_token}:x-oauth-basic@github.com" > ~/.git-credentials
+          git config --global user.email $email
+          git config --global user.name $username
+
       - name: Install and Build 🔧
         run: |
-          git remote rm origin
-          git remote add origin 'git@github.com:StefanyRepetcki/calculadora-vue-js.git'
-          git config --global user.email "stefany.c.r@hotmail.com"
-          git config --global user.name "StefanyRepetcki"
           npm install
           npm run build
+          git add -A
+          git commit -m "🚀 Deploy id ${GITHUB_RUN_ID}"
+          git push -f "https://github.com/${GITHUB_REPOSITORY}.git" master:gh-pages
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.3
