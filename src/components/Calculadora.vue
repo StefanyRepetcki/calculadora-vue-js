@@ -328,8 +328,8 @@ export default {
     .left {
         display: flex;
         justify-content: left;
-        display: -webkit-flex;
-        -webkit-justify-content: left;
-        padding: 30px 30px 0px;
+        display: -webkit-flex !important;
+        -webkit-justify-content: left !important;
+        padding: 30px 30px 0px !important;
     }
 </style>
