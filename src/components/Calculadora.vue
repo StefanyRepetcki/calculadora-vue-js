@@ -320,12 +320,16 @@ export default {
     .right {
         display: flex;
         justify-content: right;
+        display: -webkit-flex;
+        -webkit-justify-content: right;
         padding: 20px 30px 0px;
     }
 
     .left {
         display: flex;
         justify-content: left;
+        display: -webkit-flex;
+        -webkit-justify-content: left;
         padding: 30px 30px 0px;
     }
 </style>
