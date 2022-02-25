@@ -322,7 +322,7 @@ export default {
         justify-content: right;
         display: -webkit-flex !important;
         -webkit-justify-content: right !important;
-        padding: 20px 30px 0px !important;
+        padding: 20px 10px 0px !important;
     }
 
     .left {
