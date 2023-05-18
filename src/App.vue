@@ -5,6 +5,28 @@
 </template>
 
 <style>
+/* Estilo para a barra de rolagem */
+::-webkit-scrollbar {
+  width: 8px; /* Largura da barra de rolagem */
+  background-color: #000000; /* Cor de fundo da barra de rolagem */
+}
+
+/* Estilo para o thumb (alça) da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background-color: #1DC46B; /* Cor de fundo do thumb */
+  border-radius: 4px; /* Raio de borda do thumb */
+}
+
+/* Estilo para o thumb quando estiver sendo arrastado ou em hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #00A556; /* Cor de fundo do thumb em hover */
+}
+
+/* Estilo para o thumb quando estiver pressionado */
+::-webkit-scrollbar-thumb:active {
+  background-color: #00984D; /* Cor de fundo do thumb em pressionado */
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

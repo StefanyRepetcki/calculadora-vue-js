@@ -213,7 +213,8 @@ export default {
   height: 270px;
   display: flex;
   flex-direction: row;
-  align-items: start;
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start !important;
 }
 
 h3 {
